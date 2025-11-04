@@ -1,13 +1,15 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import ComingSoon from "@/components/ComingSoon";
+import HeroBanner from "@/components/HeroBanner";
+import SocialMedia from "@/components/SocialMedia";
 
 export default function Home() {
   return (
     <>
       <Header />
       <main>
-        <ComingSoon />
+        <HeroBanner />
+        <SocialMedia />
       </main>
       <Footer />
     </>
