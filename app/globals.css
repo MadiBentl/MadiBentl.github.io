@@ -1,16 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 html,
 body {
-  @apply h-full;
+  height: 100%;
 }
 
 body {
-  @apply flex flex-col min-h-screen;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
-  @apply flex-1;
+  flex: 1;
+}
+
+.wavyBackground {
+background-color: #e4eff4;
+opacity: 0.2;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e4eff4 40px ), repeating-linear-gradient( #87b2fd55, #87b2fd );
 }
