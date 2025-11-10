@@ -1,14 +1,13 @@
 export default function Header() {
   return (
-    <header className="bg-gray-900 text-white py-4 shadow-md">
-      <div className="max-w-5xl mx-auto px-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Portfolio</h1>
-        <nav className="flex gap-6">
-          <a href="#home" className="hover:text-gray-300 transition">Home</a>
-          <a href="#about" className="hover:text-gray-300 transition">About</a>
-          <a href="#contact" className="hover:text-gray-300 transition">Contact</a>
-        </nav>
-      </div>
+    <header className="absolute inset-x-0 top-0 z-50">
+      <nav className="flex ml-auto items-center justify-between p-6 lg:px-8">
+        <div className="hidden lg:flex lg:gap-x-8">
+          <a href="#" className="text-sm/6 font-semibold text-gray-900">Projects</a>
+          <a href="#" className="text-sm/6 font-semibold text-gray-900">About Me</a>
+          <a href="#" className="text-sm/6 font-semibold text-gray-900">Contact</a>
+        </div>
+      </nav>
     </header>
   );
 }

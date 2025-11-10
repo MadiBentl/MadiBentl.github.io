@@ -4,6 +4,7 @@ import HeroBanner from "@/components/HeroBanner";
 import SocialMedia from "@/components/SocialMedia";
 import AboutMe from "@/components/AboutMe";
 import Projects from "@/components/Projects";
+import Technology from "@/components/Technology";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <main>
         <HeroBanner />
+        <Technology />
         <Projects />
         <AboutMe />
         <SocialMedia />
