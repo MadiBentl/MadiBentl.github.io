@@ -3,7 +3,7 @@ export default function Projects() {
         {
             "name": "Ecover",
             "image": "",
-            "tech": ["headless", "bigcommerce", "next.js", "tailwind", "storyblok"],
+            "tech": ["headless", "bigcommerce", "next.js", "tailwind", "storyblok", "typescript"],
             "description": "Ecover is a major European retailer of eco-friendly cleaning products. This build features localization, an intense storyblok configuration, and complicated components. It was a delight to be able to contribute to this project."
         },
         {
@@ -16,19 +16,19 @@ export default function Projects() {
             "name": "Plant Therapy",
             "image": "",
             "tech": ["shopify", "javascript"],
-            "description": "This Shopify Plus build required a lot of collaboration with the client to build out metafields and subscriptions in a way that are user friendly - both for the merchant and the end user."
+            "description": "This Shopify Plus build required a lot of collaboration with the client to build out metafields and subscriptions in a way that are user friendly - both for the merchant and the end user. I was the lead developer on this project and enjoyed collaborating with the client, account manager and designer to find everything we need for a perfect build."
         }
     ]
   return (
     <section className="py-16 px-4 md:px-8 lg:px-16 w-full">
       <div className="max-w-6xl mx-auto w-full">
-        <h2>Projects</h2>
-        <p>Collaboration is central to success. Below is a list of clients I've worked with & projects I've built.</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+        <h2 className="text-4xl font-bold">Projects</h2>
+        <p className="text-l font-bold">Collaboration is central to success. Below is a list of clients I've worked with & projects I've built.</p>
+        <div>
             {Projects.map(project => {
                 return (
-                    <div>
-                        <h3>{project.name}</h3>
+                    <div className="my-8 w-[40vw] min-w-[360px]">
+                        <h3 className="text-xl font-bold">{project.name}</h3>
                         <p>{project.description}</p>
                     </div>
                 )

@@ -25,7 +25,7 @@ export default function AboutMe() {
             <img
               src="/madison-bentley.jpg"
               alt="About Me"
-              className="w-full max-w-sm rounded-lg shadow-lg object-cover aspect-square"
+              className="w-full max-w-sm object-cover aspect-square border-30 border-(--color-accent) rounded-t-4xl"
             />
           </div>
         </div>

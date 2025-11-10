@@ -3,6 +3,10 @@
 html,
 body {
   height: 100%;
+  --color-magenta: #FF0066;
+  --color-blue: #0099ff;
+  --color-black: #00171F;
+  --color-accent: #FA9E60;
 }
 
 body {
@@ -13,10 +17,4 @@ body {
 
 main {
   flex: 1;
-}
-
-.wavyBackground {
-background-color: #e4eff4;
-opacity: 0.2;
-background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e4eff4 40px ), repeating-linear-gradient( #87b2fd55, #87b2fd );
 }

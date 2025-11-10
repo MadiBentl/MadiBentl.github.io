@@ -28,7 +28,7 @@ export default function SocialMedia() {
           return (
             <li key={socialMedia.name} className="block p-4">
               <a href={socialMedia.link}>
-                <IconComponent size={48} color="green"/>
+                <IconComponent size={48} color="var(--color-blue)"/>
               </a>
             </li>
           )
