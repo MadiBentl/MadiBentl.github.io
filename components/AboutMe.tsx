@@ -1,6 +1,16 @@
 export default function AboutMe() {
   return (
     <section className="py-16 px-4 md:px-8 lg:px-16 w-full">
+      <style>{`
+        .image-container::after {
+          content: "";
+          background-image: url(/wave-photo-bottom.svg);
+          display: block;
+          width: 100%;
+          height: 50px;
+          background-size: auto;
+        }
+      `}</style>
       <div className="max-w-6xl mx-auto w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 items-center">
           {/* Left side - Text content */}
@@ -22,11 +32,13 @@ export default function AboutMe() {
 
           {/* Right side - Image */}
           <div className="flex justify-center">
-            <img
-              src="/madison-bentley.jpg"
-              alt="About Me"
-              className="w-full max-w-sm object-cover aspect-square border-30 border-(--color-accent) rounded-t-4xl"
-            />
+            <div className="image-container w-full max-w-sm">
+              <img
+                src="/madison-bentley.jpg"
+                alt="About Me"
+                className="w-full object-cover aspect-square border-30 border-(--color-accent) rounded-t-4xl"
+              />
+            </div>
           </div>
         </div>
       </div>
