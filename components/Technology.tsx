@@ -33,9 +33,9 @@ export default function Technology() {
         className="w-full h-auto object-fill"
         priority
       />
-      <div className="flex flex-col items-center p-8 bg-(--color-blue)">
+      <div className="flex flex-col items-center pt-8 bg-(--color-blue)">
         <div className="max-w-6xl">
-          <h2 className="text-4xl font-bold text-white text-center">How I build</h2>
+          <h2 className="text-4xl font-bold text-white text-center">How I Build</h2>
           <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-0 m-0 list-none">
             {technologies.map(technology => {
               return (

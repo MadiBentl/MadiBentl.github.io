@@ -32,7 +32,7 @@ export default function Projects() {
                             <img src={project.image} alt={project.name} className="w-full h-auto rounded-3xl mb-4"/>
                             <div>
                                 <h3 className="text-xl font-bold">{project.name}</h3>
-                                <p>{project.description}</p>
+                                <p className="text-lg text-gray-700 leading-relaxed">{project.description}</p>
                                 <ul className="flex flex-wrap">{project.tech.map(tech => {
                                     return (<li key={tech}>
                                         <div className="bg-(--color-accent) inline-block py-1 px-4 mr-2 mb-2 rounded-3xl font-bold text-white">{tech}</div></li>)
