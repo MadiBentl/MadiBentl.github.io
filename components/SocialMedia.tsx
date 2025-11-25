@@ -6,12 +6,12 @@ export default function SocialMedia() {
         {
             "name": "github",
             "icon": Github,
-            "link": "https://github.com/yourprofile"
+            "link": "https://github.com/MadiBentl"
         },
         {
             "name": "Linkedin",
             "icon": Linkedin,
-            "link": "https://linkedin.com/in/yourprofile"
+            "link": "https://ca.linkedin.com/in/madison-b-a9220990"
         },
         {
             "name": "email",
@@ -21,7 +21,7 @@ export default function SocialMedia() {
     ]
   return (
     <div className="flex flex-col items-center p-8">
-      <h2 className="text-4xl font-bold text-gray-800 text-center">Let's Collaborate</h2>
+      <h2 id="contact" className="text-4xl font-bold text-gray-800 text-center">Let's Collaborate</h2>
       <ul className="flex justify-center gap-8 p-0 m-0 list-none">
         {socialMedias.map(socialMedia => {
           const IconComponent = socialMedia.icon;

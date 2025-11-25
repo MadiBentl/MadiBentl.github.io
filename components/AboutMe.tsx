@@ -15,7 +15,7 @@ export default function AboutMe() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 items-center">
           {/* Left side - Text content */}
           <div className="space-y-6">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+            <h2 id="about" className="text-4xl md:text-5xl font-bold text-gray-900">
               About Me
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">

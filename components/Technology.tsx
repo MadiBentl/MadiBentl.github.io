@@ -34,17 +34,19 @@ export default function Technology() {
         priority
       />
       <div className="flex flex-col items-center p-8 bg-(--color-blue)">
-        <h2 className="text-4xl font-bold text-white text-center">How I build</h2>
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-0 m-0 list-none">
-          {technologies.map(technology => {
-            return (
-              <li key={technology.name} className="block p-4">
-                  <h3 className="text-2xl text-white">{technology.name}</h3>
-                  <p className="text-l text-white">{technology.description}</p>
-              </li>
-            )
-          })}
-        </ul>
+        <div className="max-w-6xl">
+          <h2 className="text-4xl font-bold text-white text-center">How I build</h2>
+          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-0 m-0 list-none">
+            {technologies.map(technology => {
+              return (
+                <li key={technology.name} className="block p-4">
+                    <h3 className="text-2xl text-white">{technology.name}</h3>
+                    <p className="text-l text-white">{technology.description}</p>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
       </div>
       <Image
         src="/wave-bottom.svg"
