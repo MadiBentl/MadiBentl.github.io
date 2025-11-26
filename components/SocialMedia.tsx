@@ -21,7 +21,7 @@ export default function SocialMedia() {
     ]
   return (
     <div className="flex flex-col items-center p-8">
-      <h2 id="contact" className="text-4xl font-bold text-gray-800 text-center">Let's Collaborate</h2>
+      <h2 id="contact" className="text-4xl md:text-5xl font-bold text-gray-800 text-center">Let's Collaborate</h2>
       <ul className="flex justify-center gap-8 p-0 m-0 list-none">
         {socialMedias.map(socialMedia => {
           const IconComponent = socialMedia.icon;

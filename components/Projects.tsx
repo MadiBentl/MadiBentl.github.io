@@ -22,8 +22,8 @@ export default function Projects() {
   return (
     <section className="pt-16 px-4 md:px-8 lg:px-16 w-full">
       <div className="max-w-6xl mx-auto w-full">
-        <h2 id="projects" className="text-4xl font-bold text-center">Projects</h2>
-        <p className="text-2xl text-center max-w-4xl mx-auto">Collaboration is central to success. Below is a selection of clients I've worked with & projects I've built.</p>
+        <h2 id="projects" className="text-4xl md:text-5xl font-bold text-center text-gray-800">Projects</h2>
+        <p className="text-2xl text-gray-700 text-center max-w-4xl mx-auto">Collaboration is central to success. Below is a selection of clients I've worked with & projects I've built.</p>
         <div>
             {Projects.map(project => {
                 return (
@@ -31,7 +31,7 @@ export default function Projects() {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 items-center">
                             <img src={project.image} alt={project.name} className="w-full h-auto rounded-3xl mb-4"/>
                             <div>
-                                <h3 className="text-xl font-bold">{project.name}</h3>
+                                <h3 className="text-xl font-bold text-gray-800">{project.name}</h3>
                                 <p className="text-lg text-gray-700 leading-relaxed">{project.description}</p>
                                 <ul className="flex flex-wrap">{project.tech.map(tech => {
                                     return (<li key={tech}>
