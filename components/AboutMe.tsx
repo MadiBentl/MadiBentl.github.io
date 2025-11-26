@@ -25,7 +25,7 @@ export default function AboutMe() {
             <div className="image-container w-full max-w-sm">
               <img
                 src="/madison-bentley.jpg"
-                alt="About Me"
+                alt="Headshot of Madison Bentley. Madison has long hair, a dark blue blouse, and is smiling at the camera."
                 className="w-full object-cover aspect-square border-30 border-(--color-accent) rounded-t-4xl"
               />
             </div>

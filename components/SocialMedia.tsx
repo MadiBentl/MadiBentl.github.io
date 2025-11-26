@@ -27,8 +27,9 @@ export default function SocialMedia() {
           const IconComponent = socialMedia.icon;
           return (
             <li key={socialMedia.name} className="block p-4">
-              <a href={socialMedia.link}>
-                <IconComponent size={48} color="var(--color-blue)"/>
+              <a href={socialMedia.link} target="_blank" rel="noopener noreferrer">
+                <IconComponent size={48} color="var(--color-blue)" aria-hidden="true"/>
+                <span className="sr-only">{socialMedia.name}</span>
               </a>
             </li>
           )
